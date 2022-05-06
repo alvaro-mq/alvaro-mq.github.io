@@ -1,5 +1,6 @@
 import './App.css';
 import { useTranslation } from 'react-i18next';
+import NavBar from './components/NavBar';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <select onChange={changeLanguageHandler}>
+      <NavBar />
+      <select onChange={changeLanguageHandler} className="mt-20">
         <option value="en">English</option>
         <option value="es">Spanish</option>
       </select>

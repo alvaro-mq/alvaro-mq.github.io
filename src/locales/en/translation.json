@@ -1,6 +1,13 @@
 {
     "greeting": "Hello",
-    "text": "Thank you for visiting our website.",
-    "language": "Language"
+    "text": "Thank you for visiting my website.",
+    "language": "Language",
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "work": "Work",
+        "contact": "Contact"
+    }
 }
   

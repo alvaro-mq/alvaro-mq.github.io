@@ -1,6 +1,13 @@
 {
     "greeting": "Hola",
-    "text": "Gracias por visitar nuestro sitio web.",
-    "language": "Idioma"
-  }
+    "text": "Gracias por visitar mi sitio web.",
+    "language": "Idioma",
+    "menu": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "skills": "Habilidades",
+      "work": "Experiencia",
+      "contact": "Contacto"
+    }
+}
   
