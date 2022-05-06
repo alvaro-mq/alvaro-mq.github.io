@@ -14,6 +14,10 @@
       "iAm": "Yo soy Full Stack Developer",
       "presentation": "Soy...",
       "viewWork": "Ver trabajos"
+    },
+    "about": {
+      "presentation": "Hola Yo soy Alvaro, mucho gusto en conocerte, por favor hecha un vistazo.",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipsicing elit."
   }
 }
   
