@@ -8,6 +8,12 @@
       "skills": "Habilidades",
       "work": "Experiencia",
       "contact": "Contacto"
-    }
+    },
+    "home": {
+      "greetings": "Hola, mi nombre es",
+      "iAm": "Yo soy Full Stack Developer",
+      "presentation": "Soy...",
+      "viewWork": "Ver trabajos"
+  }
 }
   
