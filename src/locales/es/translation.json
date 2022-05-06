@@ -18,6 +18,9 @@
     "about": {
       "presentation": "Hola Yo soy Alvaro, mucho gusto en conocerte, por favor hecha un vistazo.",
       "description": "Lorem ipsum dolor, sit amet consectetur adipsicing elit."
-  }
+    },
+    "skills": {
+      "description": "Estas son las tecnologías con las que he trabajado"
+    }
 }
   

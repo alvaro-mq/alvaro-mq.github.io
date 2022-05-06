@@ -18,6 +18,9 @@
     "about": {
         "presentation": "Hi i'm Alvaro, nice to meet you, please take a look around.",
         "description": "Lorem ipsum dolor, sit amet consectetur adipsicing elit."
+    },
+    "skills": {
+        "description": "These are the technologies i've worked with"
     }
 }
   
