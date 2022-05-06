@@ -21,6 +21,11 @@
     },
     "skills": {
       "description": "Estas son las tecnologías con las que he trabajado"
-    }
+    },
+    "work": {
+      "description": "Mira algunos de mis trabajos recientes",
+      "demo": "Demostracion",
+      "code": "Codigo"
+  }
 }
   

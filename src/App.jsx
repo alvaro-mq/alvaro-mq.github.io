@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
+import Work from './components/Work';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -19,6 +20,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Work />
       <select onChange={changeLanguageHandler} className="mt-20">
         <option value="en">English</option>
         <option value="es">Spanish</option>
