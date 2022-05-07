@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import Logo from '../assets/logoN.png';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -18,11 +19,31 @@ const NavBar = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li>{t('menu.home')}</li>
-        <li>{t('menu.about')}</li>
-        <li>{t('menu.skills')}</li>
-        <li>{t('menu.work')}</li>
-        <li>{t('menu.contact')}</li>
+        <li>
+          <Link to="home" smooth={true} duration={500}>
+            {t('menu.home')}
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth={true} duration={500}>
+            {t('menu.about')}
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} duration={500}>
+            {t('menu.skills')}
+          </Link>
+        </li>
+        <li>
+          <Link to="work" smooth={true} duration={500}>
+            {t('menu.work')}
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500}>
+            {t('menu.contact')}
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}
@@ -32,11 +53,31 @@ const NavBar = () => {
 
       {/* Mobile menu*/}
       <ul className={nav ? 'navbar_mobile' : 'hidden'}>
-        <li className="navbar_mobile_li">{t('menu.home')}</li>
-        <li className="navbar_mobile_li">{t('menu.about')}</li>
-        <li className="navbar_mobile_li">{t('menu.skills')}</li>
-        <li className="navbar_mobile_li">{t('menu.work')}</li>
-        <li className="navbar_mobile_li">{t('menu.contact')}</li>
+        <li className="navbar_mobile_li">
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            {t('menu.home')}
+          </Link>
+        </li>
+        <li className="navbar_mobile_li">
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            {t('menu.about')}
+          </Link>
+        </li>
+        <li className="navbar_mobile_li">
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            {t('menu.skills')}
+          </Link>
+        </li>
+        <li className="navbar_mobile_li">
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+            {t('menu.work')}
+          </Link>
+        </li>
+        <li className="navbar_mobile_li">
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+            {t('menu.contact')}
+          </Link>
+        </li>
       </ul>
 
       {/* Social icons */}
