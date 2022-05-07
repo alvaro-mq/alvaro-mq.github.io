@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import Logo from '../assets/logoN.png';
 import { Link } from 'react-scroll';
+import SelectLanguage from './SelectLanguage';
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -44,11 +45,21 @@ const NavBar = () => {
             {t('menu.contact')}
           </Link>
         </li>
+        <li>
+          <SelectLanguage />
+        </li>
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+      <div className="md:hidden z-10">
+        {!nav ? (
+          <div className="flex">
+            <SelectLanguage className="m-4" />
+            <FaBars onClick={handleClick} />
+          </div>
+        ) : (
+          <FaTimes onClick={handleClick} />
+        )}
       </div>
 
       {/* Mobile menu*/}
