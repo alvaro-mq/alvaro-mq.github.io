@@ -26,6 +26,10 @@
       "description": "Mira algunos de mis trabajos recientes",
       "demo": "Demostracion",
       "code": "Codigo"
-  }
+    },
+    "contact": {
+      "description": "Envíe el formulario a continuación o envíeme un correo electrónico: alvaro.mamani.qp@gmail.com",
+      "collaborate": "Colaboremos"
+    }
 }
   

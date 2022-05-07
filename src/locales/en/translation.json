@@ -26,6 +26,10 @@
         "description": "Check out some of my recent work",
         "demo": "Demo",
         "code": "Code"
+    },
+    "contact": {
+        "description": "Submit the form below or shoot me an email - alvaro.mamani.qp@gmail.com",
+        "collaborate": "Let's Collaborate"
     }
 }
   
