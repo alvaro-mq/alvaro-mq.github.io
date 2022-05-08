@@ -12,7 +12,7 @@ const SelectLanguage = () => {
   return (
     <select
       onChange={changeLanguageHandler}
-      className="bg-[#682F48] text-white font-bold mx-3 rounded focus:outline-none focus:shadow-outline">
+      className="bg-light-bg-primary dark:bg-dark-bg-primary text-light-text-primary dark:text-dark-text-primary font-bold mx-3 rounded focus:outline-none focus:shadow-outline">
       <option value="en">EN</option>
       <option value="es">ES</option>
     </select>

@@ -9,6 +9,7 @@ module.exports = {
       },
     },
     colors: {
+      generic: '#4DA2F7',
       'dark-bg-primary': '#10172A',
       'dark-bg-secondary': '#283141',
       'dark-text-primary': '#f7fafc',
