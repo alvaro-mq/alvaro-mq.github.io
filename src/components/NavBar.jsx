@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import Logo from '../assets/logoN.png';
 import { Link } from 'react-scroll';
 import SelectLanguage from './SelectLanguage';
+import DarkModeSwitch from './DarkModeSwitch';
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div>
-        <img src={Logo} alt="Logo image" style={{ width: '80px' }} />
+        <div className="w-[80px] bg-logo-light dark:bg-logo-dark h-[80px] content-div"></div>
       </div>
 
       {/* menu */}
@@ -47,6 +47,9 @@ const NavBar = () => {
         </li>
         <li>
           <SelectLanguage />
+        </li>
+        <li className="px-1">
+          <DarkModeSwitch />
         </li>
       </ul>
 
