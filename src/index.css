@@ -15,11 +15,11 @@
 }
 
 .navbar {
-  @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#682F48] text-gray-300;
+  @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-light-bg-primary text-light-text-primary dark:bg-dark-bg-primary dark:text-dark-text-primary;
 }
 
 .navbar_mobile {
-  @apply absolute top-0 left-0 w-full h-screen bg-[#682F48] flex flex-col justify-center items-center;
+  @apply absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-light-bg-primary text-light-text-primary dark:bg-dark-bg-primary dark:text-dark-text-primary;
 }
 
 .navbar_mobile_li {
@@ -30,7 +30,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 250px;
 }
 
 .content-div:hover {
