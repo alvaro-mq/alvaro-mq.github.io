@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
-import dibujo from '../assets/avatar.png';
+import avatar1 from '../assets/avatar.png';
+import avatar2 from '../assets/avatar2.png';
 
 const Home = () => {
   const { t } = useTranslation();
+
+  const [avatar, setAvatar] = useState(true);
+
+  const changeAvatar = () => {
+    setAvatar(!avatar);
+  };
+
   return (
     <div name="home" className="w-full h-screen bg-light-bg-primar dark:bg-dark-bg-primary">
       {/* Container */}
@@ -24,7 +32,12 @@ const Home = () => {
             </p>
           </div>
           <div className="grid place-items-center sm:place-items-start">
-            <img src={dibujo} alt="alvaro" className="w-[180px] sm:w-[400px]" />
+            <img
+              src={avatar ? avatar1 : avatar2}
+              alt="alvaro"
+              className="w-[180px] sm:w-[400px]"
+              onClick={changeAvatar}
+            />
           </div>
         </div>
         <Link to="work" smooth={true} duration={500}>
