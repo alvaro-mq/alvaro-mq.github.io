@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import config from '../config.json';
+import config from '../../config.json';
 
 const SocialMediaMedium = () => {
   return (

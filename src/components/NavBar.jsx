@@ -4,9 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 import SelectLanguage from './SelectLanguage';
 import DarkModeSwitch from './DarkModeSwitch';
-import SocialMediaMobile from './SocialMediaMobile';
-import SocialMedia from './SocialMedia';
-import SocialMediaMedium from './SocialMediaMedium';
+import SocialMediaMobile from './socialMedia/SocialMediaMobile';
+import SocialMedia from './socialMedia/SocialMedia';
+import SocialMediaMedium from './socialMedia/SocialMediaMedium';
+
 const NavBar = () => {
   const { t } = useTranslation();
   const [nav, setNav] = useState(false);
