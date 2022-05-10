@@ -41,7 +41,7 @@ const DarkModeSwitch = () => {
     <div
       onClick={toogleSwitch}
       className="flex-start flex-h-[50px] rounded-[50px] bg-zinc-100 p-[5px] shadow-inner hover:cursor-pointer dark:bg-zinc-700">
-      {isOn ? (
+      {isOn === 'dark' ? (
         <RiSunFill className="h-6 w-6 text-yellow-300" />
       ) : (
         <RiMoonClearFill className="h-6 w-6 text-slate-200" />
