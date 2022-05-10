@@ -106,13 +106,17 @@ const NavBar = () => {
       <SocialMediaMedium />
 
       {/* Return button */}
-      <div className="fixed top-[92%] left-[90%]">
-        <button className="animate-bounce">
-          <Link to="home" smooth={true} duration={500}>
-            <FaAngleUp size={40} />
-          </Link>
-        </button>
-      </div>
+      {!nav ? (
+        <div className="fixed top-[92%] lg:left-[90%] left-[85%]">
+          <button className="animate-bounce">
+            <Link to="home" smooth={true} duration={500}>
+              <FaAngleUp size={40} />
+            </Link>
+          </button>
+        </div>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

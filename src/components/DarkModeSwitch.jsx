@@ -1,34 +1,41 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RiMoonClearFill, RiSunFill } from 'react-icons/ri';
 
-const DarkModeSwitch = () => {
-  const [isOn, setIsOn] = useState(() => {
-    if (localStorage.getItem('theme') === 'light') {
-      return true;
+const getInitialTheme = () => {
+  if (typeof window !== 'undefined' && window.localStorage) {
+    const storedPrefs = window.localStorage.getItem('color-theme');
+    if (typeof storedPrefs === 'string') {
+      return storedPrefs;
     }
-    return false;
-  });
+
+    const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
+    if (userMedia.matches) {
+      return 'dark';
+    }
+  }
+  return 'dark';
+};
+
+const DarkModeSwitch = () => {
+  const [isOn, setIsOn] = useState(getInitialTheme);
 
   const toogleSwitch = () => {
-    setIsOn(!isOn);
+    setIsOn(isOn === 'dark' ? 'light' : 'dark');
   };
 
-  if (isOn) {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-  } else {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  }
+  const rawSetTheme = (theme) => {
+    const root = window.document.documentElement;
+    const isDark = theme === 'dark';
 
-  if (
-    localStorage.theme === 'light' ||
-    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)
-  ) {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
+    root.classList.remove(isDark ? 'light' : 'dark');
+    root.classList.add(theme);
+
+    localStorage.setItem('color-theme', theme);
+  };
+
+  useEffect(() => {
+    rawSetTheme(isOn);
+  }, [isOn]);
 
   return (
     <div
