@@ -1,5 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { FiSend } from 'react-icons/fi';
+import InputForm from './form/InputForm';
+import TextAreaForm from './form/TextAreaForm';
 import config from '../config.json';
 
 const Contact = () => {
@@ -16,27 +19,30 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-generic">{t('menu.contact')}</p>
           <p className="py-6">{t('contact.description')}</p>
         </div>
-        <input
-          className="p-2 bg-[#ccd6f6] text-light-text-primary"
-          type="text"
-          placeholder="Name"
+        <InputForm
           name="name"
+          label={t('form.label.name')}
+          type="text"
+          placeholder={t('form.placeholder.name')}
         />
-        <input
-          className="my-4 p-2 bg-[#ccd6f6] text-light-text-primary"
-          type="email"
-          placeholder="Email"
+        <InputForm
           name="email"
+          label={t('form.label.email')}
+          type="email"
+          placeholder={t('form.placeholder.email')}
         />
-        <textarea
-          className="bg-[#ccd6f6] p-2 text-light-text-primary"
+        <TextAreaForm
           name="message"
-          rows="10"
-          placeholder="Message"></textarea>
+          label={t('form.label.message')}
+          placeholder={t('form.placeholder.message')}
+        />
         <button
           type="submit"
-          className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-lg">
+          className="group border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-lg hover:border-generic hover:text-generic">
           {t('contact.collaborate')}
+          <span className="ml-2 group-hover:-rotate-45 duration-300">
+            <FiSend />
+          </span>
         </button>
       </form>
     </div>

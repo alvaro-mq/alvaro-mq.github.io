@@ -9,10 +9,22 @@
       "work": "Experiencia",
       "contact": "Contacto"
     },
+    "form": {
+      "label": {
+        "name": "Tu nombre",
+        "email": "Tu correo electrónico",
+        "message": "Tu mensaje"
+      },
+      "placeholder": {
+        "name": "nombre",
+        "email": "nombre@mail.com",
+        "message": "Mensaje"
+      }
+    },
     "home": {
       "greetings": "Hola, mi nombre es",
       "iAm": "Yo soy Full Stack Developer",
-      "presentation": "Soy...",
+      "presentation": "Soy ingeniero de software con más de 5 años de experiencia escribiendo Java y Javascript. Me especializo en la creación de aplicaciones web utilizando marcos como Expressjs, Nestjs, React y Vue.js",
       "viewWork": "Ver trabajos"
     },
     "about": {

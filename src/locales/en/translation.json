@@ -9,10 +9,22 @@
         "work": "Work",
         "contact": "Contact"
     },
+    "form": {
+        "label": {
+            "name": "Your name",
+            "email": "Your email",
+            "message": "Your message"
+        },
+        "placeholder": {
+            "name": "name",
+            "email": "name@mail.com",
+            "message": "Message"
+        }
+    },
     "home": {
         "greetings": "Hi, my name is",
         "iAm": "I’m a Full Stack Developer",
-        "presentation": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "presentation": "I am a software engineer with 5+ years experience writing Java & Javascript. I specialize in building web apps using frameworks like Expressjs, Nestjs, React and Vue.js",
         "viewWork": "View Work"
     },
     "about": {
