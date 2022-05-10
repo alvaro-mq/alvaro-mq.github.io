@@ -8,6 +8,7 @@ import Postgres from '../assets/postgres.png';
 import Nestjs from '../assets/nestjs.png';
 import Github from '../assets/github.png';
 import { useTranslation } from 'react-i18next';
+import ItemSkill from './ItemSkill';
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -22,38 +23,14 @@ const Skills = () => {
           <p className="py-4">{t('skills.description')}</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="hover:scale-110 duration-500">
-            <img src={HTML} alt="HTML icon" className="w-20 mx-auto" />
-            <p>HTML</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={JavaScript} alt="Nodejs icon" className="w-20 mx-auto" />
-            <p>JavaScript</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={Node} alt="HTML icon" className="w-20 mx-auto" />
-            <p>NodeJs</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={ReactJs} alt="HTML icon" className="w-20 mx-auto" />
-            <p>ReactJs</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={Nestjs} alt="HTML icon" className="w-20 mx-auto" />
-            <p>Nestjs</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={Mongo} alt="HTML icon" className="w-20 mx-auto" />
-            <p>Mongo</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={Postgres} alt="HTML icon" className="w-20 mx-auto" />
-            <p>Postgres</p>
-          </div>
-          <div className="hover:scale-110 duration-500">
-            <img src={Github} alt="HTML icon" className="w-20 mx-auto" />
-            <p>Git/Github</p>
-          </div>
+          <ItemSkill src={HTML} alt="HTML icon" description="HTML" />
+          <ItemSkill src={JavaScript} alt="Javascript icon" description="JavaScript" />
+          <ItemSkill src={Node} alt="Nodejs icon" description="NodeJs" />
+          <ItemSkill src={ReactJs} alt="ReactJs icon" description="ReactJs" />
+          <ItemSkill src={Nestjs} alt="Nestjs icon" description="NestJs" />
+          <ItemSkill src={Mongo} alt="Mongo icon" description="Mongo" />
+          <ItemSkill src={Postgres} alt="Postgres icon" description="Postgres" />
+          <ItemSkill src={Github} alt="Github icon" description="Git/Github" />
         </div>
       </div>
     </div>
