@@ -29,7 +29,7 @@ const Work = () => {
           <ItemWork
             img={Work1}
             name={t('projects.modemManager.name')}
-            type="Open source"
+            type={t('work.type.opensource')}
             description={t('projects.modemManager.description')}
             urlCode={config.URL_MM_CODE}
             urlDemo={config.URL_MM_DEMO}
@@ -37,7 +37,7 @@ const Work = () => {
           <ItemWork
             img={Work7}
             name={t('projects.carbone.name')}
-            type="Open source"
+            type={t('work.type.opensource')}
             description={t('projects.carbone.description')}
             urlCode={config.URL_CB_CODE}
             urlDemo={config.URL_CB_DEMO}
@@ -45,7 +45,7 @@ const Work = () => {
           <ItemWork
             img={Work4}
             name={t('projects.alertaBot.name')}
-            type="Open source"
+            type={t('work.type.opensource')}
             description={t('projects.alertaBot.description')}
             urlDemo={config.URL_AB_DEMO}
             urlCode={config.URL_AB_CODE}
@@ -53,7 +53,7 @@ const Work = () => {
           <ItemWork
             img={Work5}
             name={t('projects.motiva.name')}
-            type="Open source"
+            type={t('work.type.opensource')}
             description={t('projects.motiva.description')}
             urlDemo={config.URL_MT_DEMO}
             urlCode={config.URL_MT_CODE}
@@ -61,31 +61,41 @@ const Work = () => {
           <ItemWork
             img={Work2}
             name={t('projects.ajayumpi.name')}
-            type="Game"
+            type={t('work.type.videogame')}
             description={t('projects.ajayumpi.description')}
             urlDemo={config.URL_AJ_DEMO}
           />
           <ItemWork
             img={Work6}
             name={t('projects.mpgm.name')}
-            type="Game"
+            type={t('work.type.videogame')}
             description={t('projects.mpgm.description')}
           />
           <ItemWork
             img={Work3}
             name={t('projects.ciudadania.name')}
-            type="Open source"
+            type={t('work.type.private')}
             description={t('projects.ciudadania.description')}
             urlDemo={config.URL_CI_DEMO}
           />
           <ItemWork
             img={Work8}
             name={t('projects.mensajeria.name')}
-            type="Open source"
+            type={t('work.type.private')}
             description={t('projects.mensajeria.description')}
             urlDemo={config.URL_MJ_DEMO}
           />
         </div>
+        <span className="pt-6">
+          {t('work.more')}
+          <a
+            href={config.GITHUB}
+            className="font-bold text-generic"
+            target="_blank"
+            rel="noreferrer">
+            {t('work.account')}
+          </a>
+        </span>
       </div>
     </div>
   );

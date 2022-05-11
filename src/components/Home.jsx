@@ -20,6 +20,9 @@ const Home = () => {
       className="w-full h-screen bg-light-bg-primar dark:bg-dark-bg-primary text-light-text-primary dark:text-dark-text-primary dark:border-light-bg-primary ">
       {/* Container */}
       <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className="italic text-sm mb-10 hover:text-lg hover:animate-pulse duration-75 opacity-70">
+          “{t('phrase')}“
+        </div>
         <div className="grid sm:grid-cols-3 gap-8 px-4">
           <div className="sm:col-span-2 max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
             <p className="text-generic text-sm lg:text-2xl">{t('home.greetings')}</p>
