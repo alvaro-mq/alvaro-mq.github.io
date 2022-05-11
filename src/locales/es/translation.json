@@ -6,7 +6,7 @@
       "home": "Inicio",
       "about": "Acerca de",
       "skills": "Habilidades",
-      "work": "Experiencia",
+      "work": "Trabajos",
       "contact": "Contacto"
     },
     "form": {
@@ -24,24 +24,67 @@
     "home": {
       "greetings": "Hola, mi nombre es",
       "iAm": "Yo soy Full Stack Developer",
-      "presentation": "Soy ingeniero de software con más de 5 años de experiencia escribiendo Java y Javascript. Me especializo en la creación de aplicaciones web utilizando marcos como Expressjs, Nestjs, React y Vue.js",
+      "presentation": "",
       "viewWork": "Ver trabajos"
     },
     "about": {
-      "presentation": "Hola Yo soy Alvaro, mucho gusto en conocerte, por favor hecha un vistazo.",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipsicing elit."
+      "presentation": "",
+      "description1": "",
+      "description2": "Tu puedes contarcarte con migo siguiendo los enlaces de redes sociales.",
+      "description3": ""
     },
     "skills": {
       "description": "Estas son las tecnologías con las que he trabajado"
     },
     "work": {
       "description": "Mira algunos de mis trabajos recientes",
-      "demo": "Demostracion",
-      "code": "Codigo"
+      "demo": "Demostración",
+      "code": "Código",
+      "type": {
+        "opensource": "Código libre",
+        "videogame": "Video juego",
+        "private": "Privado"
+      },
+      "more": "Si quieres ver mas de mis proyectos puedes visitar mi ",
+      "account": "cuenta de github."
     },
     "contact": {
-      "description": "Envíe el formulario a continuación o envíeme un correo electrónico: alvaro.mamani.qp@gmail.com",
+      "description": "Envíe el formulario a continuación o envíeme un correo electrónico a alvaro.mamani.qp@gmail.com",
       "collaborate": "Colaboremos"
-    }
+    },
+    "projects": {
+      "modemManager": {
+          "name": "",
+          "description": ""
+      },
+      "carbone": {
+          "name": "",
+          "description": ""
+      },
+      "alertaBot": {
+          "name": "",
+          "description": ""
+      },
+      "motiva": {
+          "name": "",
+          "description": ""
+      },
+      "ajayumpi": {
+          "name": "",
+          "description": ""
+      },
+      "mpgm": {
+          "name": "",
+          "description": ""
+      },
+      "ciudadania": {
+          "name": "",
+          "description": ""
+      },
+      "mensajeria": {
+          "name": "",
+          "description": ""
+      }
+  },
+  "phrase": "Si lo puedes imaginar, lo puedes programar."
 }
-  

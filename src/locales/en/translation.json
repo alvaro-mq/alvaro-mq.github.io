@@ -6,7 +6,7 @@
         "home": "Home",
         "about": "About",
         "skills": "Skills",
-        "work": "Work",
+        "work": "Works",
         "contact": "Contact"
     },
     "form": {
@@ -24,12 +24,14 @@
     "home": {
         "greetings": "Hi, my name is",
         "iAm": "I’m a Full Stack Developer",
-        "presentation": "I am a software engineer with 5+ years experience writing Java & Javascript. I specialize in building web apps using frameworks like Expressjs, Nestjs, React and Vue.js",
+        "presentation": "",
         "viewWork": "View Work"
     },
     "about": {
-        "presentation": "Hi i'm Alvaro, nice to meet you, please take a look around.",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipsicing elit."
+        "presentation": "",
+        "description1": "",
+        "description2": "You can connect with me via social links.",
+        "description3": ""
     },
     "skills": {
         "description": "These are the technologies i've worked with"
@@ -37,11 +39,53 @@
     "work": {
         "description": "Check out some of my recent work",
         "demo": "Demo",
-        "code": "Code"
+        "code": "Code",
+        "type": {
+            "opensource": "Open Source",
+            "videogame": "Video game",
+            "private": "Private"
+        },
+        "more": "If you want to see more of my projects you can visit my ",
+        "account": "Github account."
     },
     "contact": {
         "description": "Submit the form below or shoot me an email - alvaro.mamani.qp@gmail.com",
         "collaborate": "Let's Collaborate"
-    }
+    },
+    "projects": {
+        "modemManager": {
+            "name": "",
+            "description": ""
+        },
+        "carbone": {
+            "name": "",
+            "description": ""
+        },
+        "alertaBot": {
+            "name": "",
+            "description": ""
+        },
+        "motiva": {
+            "name": "",
+            "description": ""
+        },
+        "ajayumpi": {
+            "name": "",
+            "description": ""
+        },
+        "mpgm": {
+            "name": "",
+            "description": ""
+        },
+        "ciudadania": {
+            "name": "",
+            "description": ""
+        },
+        "mensajeria": {
+            "name": "",
+            "description": ""
+        }
+    },
+    "phrase": "If you can imagine it you can program it."
 }
   
