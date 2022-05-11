@@ -15,7 +15,7 @@
 }
 
 .navbar {
-  @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-light-bg-primary text-light-text-primary dark:bg-dark-bg-primary dark:text-dark-text-primary;
+  @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-light-bg-primary text-light-text-primary dark:bg-dark-bg-primary dark:text-dark-text-primary z-40;
 }
 
 .navbar_mobile {
@@ -38,4 +38,8 @@
     rgba(112, 157, 255, 0.8),
     hsla(242, 74%, 61%, 0.8)
   );
+}
+
+.active {
+  @apply text-generic text-xl;
 }
