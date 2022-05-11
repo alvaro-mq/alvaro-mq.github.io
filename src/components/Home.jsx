@@ -15,7 +15,9 @@ const Home = () => {
   };
 
   return (
-    <div name="home" className="w-full h-screen bg-light-bg-primar dark:bg-dark-bg-primary">
+    <div
+      name="home"
+      className="w-full h-screen bg-light-bg-primar dark:bg-dark-bg-primary text-light-text-primary dark:text-dark-text-primary dark:border-light-bg-primary ">
       {/* Container */}
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="grid sm:grid-cols-3 gap-8 px-4">
@@ -41,7 +43,7 @@ const Home = () => {
           </div>
         </div>
         <Link to="work" smooth={true} duration={500}>
-          <button className="group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 text-light-text-primary dark:text-dark-text-primary dark:border-light-bg-primary rounded-lg">
+          <button className="group border-2 px-6 py-3 my-2 flex items-center hover:text-generic hover:border-generic rounded-lg">
             {t('home.viewWork')}
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />
