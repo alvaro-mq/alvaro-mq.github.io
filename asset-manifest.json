@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c79f58c7.css",
+    "main.js": "/static/js/main.6854257a.js",
+    "static/media/avatar.png": "/static/media/avatar.e3d8eb0e879245564547.png",
+    "static/media/project5.png": "/static/media/project5.cb9b41eec38a63c956e4.png",
+    "static/media/project8.png": "/static/media/project8.58335359132023e3787b.png",
+    "static/media/project2.png": "/static/media/project2.fac1512b1a79506fa26b.png",
+    "static/media/project6.png": "/static/media/project6.c8a83be3e058e4e3a1fe.png",
+    "static/media/project4.png": "/static/media/project4.2280b8d2fb275f61ada8.png",
+    "static/media/project3.png": "/static/media/project3.3a6b64aea77ea5617750.png",
+    "static/media/avatar2.png": "/static/media/avatar2.cee1c16f5e34b083b69c.png",
+    "static/media/project7.png": "/static/media/project7.53960196f69d5b5cc7e0.png",
+    "static/media/project1.png": "/static/media/project1.e2da154ee800d4dd08b2.png",
+    "static/media/logoDark.png": "/static/media/logoDark.58c1f340cd5ff35dac4e.png",
+    "static/media/logoLight.png": "/static/media/logoLight.b0c5ee1889f7648ca966.png",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/mongo.png": "/static/media/mongo.2a1528ddc31d4ce8518d.png",
+    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/postgres.png": "/static/media/postgres.bee80fdfa99cc959e5a9.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/nestjs.png": "/static/media/nestjs.82ba28d6b835ab69f94c.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/index.html",
+    "main.c79f58c7.css.map": "/static/css/main.c79f58c7.css.map",
+    "main.6854257a.js.map": "/static/js/main.6854257a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c79f58c7.css",
+    "static/js/main.6854257a.js"
+  ]
+}
