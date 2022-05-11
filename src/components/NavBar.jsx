@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaAngleUp } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 import SelectLanguage from './SelectLanguage';
 import DarkModeSwitch from './DarkModeSwitch';
 import SocialMediaMobile from './socialMedia/SocialMediaMobile';
@@ -15,6 +15,10 @@ const NavBar = () => {
     setNav(!nav);
   };
 
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <div className="navbar">
       <div>
@@ -23,28 +27,28 @@ const NavBar = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="hover:border-b-2 hover:border-generic hover:animate-bounce">
-          <Link to="home" smooth={true} duration={500}>
+        <li className="hover:text-generic hover:text-xl">
+          <Link to="home" smooth={true} duration={500} activeClass="active" spy={true}>
             {t('menu.home')}
           </Link>
         </li>
-        <li className="hover:border-b-2 hover:border-generic hover:animate-bounce">
-          <Link to="about" smooth={true} duration={500}>
+        <li className="hover:text-generic hover:text-xl">
+          <Link to="about" smooth={true} duration={500} activeClass="active" spy={true}>
             {t('menu.about')}
           </Link>
         </li>
-        <li className="hover:border-b-2 hover:border-generic hover:animate-bounce">
-          <Link to="skills" smooth={true} duration={500}>
+        <li className="hover:text-generic hover:text-xl">
+          <Link to="skills" smooth={true} duration={500} activeClass="active" spy={true}>
             {t('menu.skills')}
           </Link>
         </li>
-        <li className="hover:border-b-2 hover:border-generic hover:animate-bounce">
-          <Link to="work" smooth={true} duration={500}>
+        <li className="hover:text-generic hover:text-xl">
+          <Link to="work" smooth={true} duration={500} activeClass="active" spy={true}>
             {t('menu.work')}
           </Link>
         </li>
-        <li className="hover:border-b-2 hover:border-generic hover:animate-bounce">
-          <Link to="contact" smooth={true} duration={500}>
+        <li className="hover:text-generic hover:text-xl">
+          <Link to="contact" smooth={true} duration={500} activeClass="active" spy={true}>
             {t('menu.contact')}
           </Link>
         </li>
@@ -57,7 +61,7 @@ const NavBar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div className="md:hidden z-10">
+      <div className="md:hidden">
         {!nav ? (
           <div className="flex">
             <SelectLanguage />
@@ -109,10 +113,8 @@ const NavBar = () => {
       {/* Return button */}
       {!nav ? (
         <div className="fixed top-[92%] lg:left-[90%] left-[85%]">
-          <button className="animate-bounce">
-            <Link to="home" smooth={true} duration={500}>
-              <FaAngleUp size={40} />
-            </Link>
+          <button className="animate-bounce" onClick={scrollToTop}>
+            <FaAngleUp size={40} />
           </button>
         </div>
       ) : (
